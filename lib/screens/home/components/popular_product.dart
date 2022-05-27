@@ -50,7 +50,7 @@ class PopularProducts extends StatelessWidget {
         SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: FutureBuilder(
-                future: getprdlist(36),
+                future: getprdlist(22),
                 builder: (context, AsyncSnapshot<List<Product2>> snapshot) {
                   if (snapshot.hasData) {
                     return Row(
