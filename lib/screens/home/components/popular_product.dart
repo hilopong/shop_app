@@ -52,6 +52,11 @@ class PopularProducts extends StatelessWidget {
             child: FutureBuilder(
                 future: getprdlist(22),
                 builder: (context, AsyncSnapshot<List<Product2>> snapshot) {
+                  // if(snapshot.connectionState==ConnectionState.waiting){
+                  //   return const Center(
+                  //     child: CircularProgressIndicator(),
+                  //   );
+                  // }
                   if (snapshot.hasData) {
                     return Row(
                       children: [
